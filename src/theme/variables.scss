@@ -36,11 +36,23 @@ $app-direction: ltr;
 $colors: (
   primary:    #6495ed,
   secondary:  #435d8c,
+  // tertiary:   #0E62BA,
   danger:     #f53d3d,
   light:      #ffffff,
   dark:       #222
 );
 
+// Top Toolbar
+$toolbar-md-background: color($colors, secondary);
+
+// Bottom Tabs
+$tabs-md-background: color($colors, secondary);
+$tabs-md-tab-color-active: color($colors, light);
+$tabs-md-tab-color-inactive: color($colors, light);
+$tabs-md-tab-text-color: color($colors, light);
+
+$list-md-background-color: color($colors, secondary);
+$list-md-text-color: color($colors, light);
 
 // App iOS Variables
 // --------------------------------------------------
@@ -86,6 +98,3 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
-
-// Top Toolbar
-$toolbar-md-background: color($colors, secondary);
