@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
@@ -7,7 +7,7 @@ export class WeatherProvider {
   apiKey = 'c36d94ea0bbb6092';
   url;
 
-  constructor(public http: HttpClient) {    
+  constructor(public http: HttpClient) {
     this.url = `http://api.wunderground.com/api/${this.apiKey}/conditions/q/`;
   }
 

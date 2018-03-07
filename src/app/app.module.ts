@@ -42,8 +42,8 @@ import { WeatherProvider } from '../providers/weather/weather';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     WeatherProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }
